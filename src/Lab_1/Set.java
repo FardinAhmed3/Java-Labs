@@ -5,13 +5,22 @@ public class Set {
 	Set (int capacity){arr=new int[capacity];}	//Constructor creates array of capacity
 	Set() {this(DEFAULT_CAPACITY);}				//Default Constructor
 
-	int contains(int elementOfSet) {			//Contains method
+	/*int contains(int elementOfSet) {			//Contains method
 		for(int i=0;i<arr.length-1;i++) {
 			if(arr[i]==elementOfSet) {
 				System.out.println(elementOfSet+" is an element of the set");
 			}
 		}
 		return 1;
+	}*/
+
+	boolean contains(int elementOfSet) {	//Contains method
+		for (i=0;i<=arr.length-1;i++) {
+			if(arr[i]==elementOfSet) {
+				return true;
+	}
+	return false;
+		}
 	}
 
 	void add(int value) {						//Add method
