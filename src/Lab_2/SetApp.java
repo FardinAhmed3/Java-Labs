@@ -47,10 +47,9 @@ public class SetApp {
 		System.out.println("=== Capacity Management ===");
 		Set<Double> v = new Set<Double>();
 
-		System.out.println("--- Creating Vector and loading it up with 1,000 elements ---");
-		int oldCapacity = -1;
+		System.out.println("--- Creating a Set<Double> and loading it up with 1,000 elements ---");
 		for (int i = 0; i < 1000; i++) {
-			v.add((double)i);
+			//v.add(i*10);
 			System.out.println(v);
 		}
 	}
