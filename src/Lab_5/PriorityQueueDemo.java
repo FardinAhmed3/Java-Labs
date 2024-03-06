@@ -1,14 +1,20 @@
 import java.util.PriorityQueue;
+import java.util.Random;
 
 public class PriorityQueueDemo{
     public static void main(String[] args) {
-        PriorityQueue<String> s= new PriorityQueue<>();
-        s.add("string1");
+        PriorityQueue<String> sPQ= new PriorityQueue<>();
+        System.out.println("=======PriorityQueue=======");
+        System.out.println(sPQ+" ("+(sPQ.isEmpty())+")");
+        System.out.println();
 
-        for (int i=0; i<=20;i++){
-        s.add("string"+i);
+        Random num=new Random(12345);
 
+        for(int i=0;i<1000;i++){
+        int randomNumber=num.nextInt(1000);
+        sPQ.add("String"+randomNumber);
         }
-        System.out.println(s);
+
+        System.out.println(sPQ);
     }
 }

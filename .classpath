@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-    <classpathentry kind="src" path="src/Lab_1"/>
-    <classpathentry kind="src" path="src/Lab_2"/>
-    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-    <classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/Lab_1"/>
+	<classpathentry kind="src" path="src/Lab_2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/Lab_5"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
