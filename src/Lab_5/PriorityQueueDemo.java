@@ -8,11 +8,13 @@ public class PriorityQueueDemo{
         System.out.println(sPQ+" ("+(sPQ.isEmpty())+")");
         System.out.println();
 
-        Random num=new Random(12345);
 
-        for(int i=0;i<1000;i++){
+
+        for(int i=0;i<10;i++){
+            Random num=new Random(12345);
         int randomNumber=num.nextInt(1000);
         sPQ.add("String"+randomNumber);
+        //sPQ.add("String"+i);
         }
 
         System.out.println(sPQ);
