@@ -1,5 +1,4 @@
 package Lab_1;
-
 public class SetApp {
 
 	public static void main(String[] args) {

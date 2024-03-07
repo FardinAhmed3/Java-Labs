@@ -9,7 +9,7 @@ class Set<E> {
 	static final int INITIAL_CAPACITY=10;
 
 
-	Set(){
+	Set(int i){
 		this.capacity=INITIAL_CAPACITY;
 
 		arr=(E [])new Object[capacity];		

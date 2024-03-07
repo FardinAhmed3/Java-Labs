@@ -1,5 +1,4 @@
 package Lab_1;
-
 public class Set {
 	int [] arr;
 	int size = 0;
