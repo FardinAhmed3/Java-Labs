@@ -9,13 +9,14 @@ class Set<E> {
 	static final int INITIAL_CAPACITY=10;
 
 
-	Set(int i){
+	@SuppressWarnings("unchecked")
+	Set(){
 		this.capacity=INITIAL_CAPACITY;
 
 		arr=(E [])new Object[capacity];		
 	}
-
-	boolean contains(E elementOfSet) {		
+	
+    boolean contains(E elementOfSet) {		
         for (int i = 0; i < size; i++) {
             if (arr[i].equals(elementOfSet)) {
                 return true;

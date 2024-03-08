@@ -1,6 +1,5 @@
 package Lab_2;
 import java.util.Random;
-
 /*Lab 2.1.2 */
 public class SetApp {
 
@@ -137,7 +136,7 @@ public class SetApp {
 		System.out.println("--- Adding 10 random values to a Set<Integer> using a Random object with seed=12345 ---");
 
 		Random num=new Random(12345);
-		Set<Integer>seo=new Set<>();
+		Set<Integer>seo=new Set<Integer>();
 
 		for(int i=0;i<10;i++){
 			int randomNumber=num.nextInt(100);
