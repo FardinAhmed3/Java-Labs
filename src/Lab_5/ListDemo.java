@@ -13,7 +13,7 @@ public class ListDemo{
         System.out.println();
 
 
-        System.out.println("Appending at end - value @ index"); 
+        System.out.println("Appending (Adding at end - value @ index)"); 
         System.out.println("-----------------------------------------");
 
         // for(int i=0;i<=100;i+=10){
@@ -26,6 +26,24 @@ public class ListDemo{
             System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
         }
 
+        System.out.println();
+        System.out.println("Getting");
+        System.out.println("------");
+
+        // for (int i=0;i<10;i++){
+        //     System.out.print(list.get(i)+", ");
+
+        // }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i));
+            if (i < list.size() - 1) {
+                System.out.print(", "); 
+            }
+        }
+
+        System.out.println();
+        System.out.println("Inserting within the List (value @ index)");
+        System.out.println("-----------------------------------------");
 
 
 }
