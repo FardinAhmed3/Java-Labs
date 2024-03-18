@@ -28,7 +28,7 @@ public class ListDemo{
 
         System.out.println();
         System.out.println("Getting");
-        System.out.println("------");
+        System.out.println("-------");
 
         // for (int i=0;i<10;i++){
         //     System.out.print(list.get(i)+", ");
@@ -40,10 +40,13 @@ public class ListDemo{
                 System.out.print(", "); 
             }
         }
-
         System.out.println();
+        System.out.println();
+
         System.out.println("Inserting within the List (value @ index)");
         System.out.println("-----------------------------------------");
+        list.add(9, "Str9000");
+        System.out.println("Str9000"+" @ "+"9"+" -> "+list+" ("+list.isEmpty()+")");
 
 
 }
