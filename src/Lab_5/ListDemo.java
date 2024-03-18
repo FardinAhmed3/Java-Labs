@@ -16,10 +16,6 @@ public class ListDemo{
         System.out.println("Appending (adding at end - value @ index)"); 
         System.out.println("-----------------------------------------");
 
-        // for(int i=0;i<=100;i+=10){
-        //     list.add("Str"+i);
-        //     System.out.println("Str"+i);
-        // }
         for(int i=0;i<10;i++){
             int temp=i*10;
             list.add("Str"+temp);
@@ -30,10 +26,6 @@ public class ListDemo{
         System.out.println("Getting");
         System.out.println("-------");
 
-        // for (int i=0;i<10;i++){
-        //     System.out.print(list.get(i)+", ");
-
-        // }
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i));
             if (i < list.size() - 1) {
