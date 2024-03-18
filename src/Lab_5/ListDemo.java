@@ -1,0 +1,52 @@
+import java.util.LinkedList;
+
+import java.util.Random;
+//Lab 5.11 List Demo
+
+public class ListDemo{
+    public static void main(String[] args) {
+        LinkedList<String> list= new LinkedList<>();
+        
+        System.out.println("========== List ==========");
+        System.out.println("size: "+list.size());
+        System.out.println(list+" ("+(list.isEmpty())+")");
+        System.out.println();
+
+
+        System.out.println("Appending at end - value @ index"); 
+        System.out.println("-----------------------------------------");
+
+        // for(int i=0;i<=100;i+=10){
+        //     list.add("Str"+i);
+        //     System.out.println("Str"+i);
+        // }
+        for(int i=0;i<10;i++){
+            int temp=i*10;
+            list.add("Str"+temp);
+            System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
+        }
+
+
+
+}
+}
+
+
+        // for(int i=0;i<10;i++){
+        //     int randomNumber=num.nextInt(1000);
+        //     sPQ.add("Str"+randomNumber);
+        //     System.out.println("Str"+randomNumber+" -> "+sPQ+" ("+sPQ.isEmpty()+")");
+        // }
+
+
+
+    //     System.out.println();
+    //     System.out.println("Removing");
+    //     System.out.println("--------");
+
+
+    //     while (!sPQ.isEmpty()) {
+    //         System.out.print(sPQ + " (" + sPQ.isEmpty() + ")");
+    //         System.out.println(" -> " + sPQ.remove());
+    // }
+    //     System.out.println(sPQ+" ("+sPQ.isEmpty()+")");
