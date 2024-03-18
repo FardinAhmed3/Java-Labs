@@ -37,8 +37,15 @@ public class ListDemo{
 
         System.out.println("Inserting within the List (value @ index)");
         System.out.println("-----------------------------------------");
-        list.add(9, "Str9000");
-        System.out.println("Str9000"+" @ "+"9"+" -> "+list+" ("+list.isEmpty()+")");
+        for(int i=9;i>0;i--){
+        int temp=i*1000;
+        list.add(i, "Str"+temp);
+        System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
+        }
+        System.out.println();
+        System.out.println("Removing elements < Str1000");
+        System.out.println("------------------------");
+        
 
 
 }
