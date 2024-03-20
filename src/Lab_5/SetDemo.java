@@ -8,6 +8,9 @@ public class SetDemo {
         HashSet<String> Set=new HashSet<>();
         System.out.println("========= Set ==========");
         System.out.println(Set+" ("+Set.isEmpty()+")");
+        System.out.println();
+
+        System.out.println("Adding");
     }
 
 }
