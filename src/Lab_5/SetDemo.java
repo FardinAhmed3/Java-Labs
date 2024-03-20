@@ -18,7 +18,6 @@ public class SetDemo {
             System.out.println("Str"+i+" -> "+Set+" ("+Set.isEmpty()+")");
 
         }
-        System.out.println(Set);
         System.out.println("Adding again");
     }
 
