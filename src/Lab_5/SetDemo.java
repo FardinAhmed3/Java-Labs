@@ -11,6 +11,7 @@ public class SetDemo {
         System.out.println();
 
         System.out.println("Adding");
+        System.out.println("------");
     }
 
 }
