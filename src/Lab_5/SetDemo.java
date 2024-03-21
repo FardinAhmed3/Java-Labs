@@ -4,6 +4,7 @@ import java.util.Random;
 
 //Lab 5.13 (Set Demo using HashSet)
 
+
 public class SetDemo {
     public static void main(String[] args) {
         HashSet<String> Set=new HashSet<>();
@@ -20,30 +21,41 @@ public class SetDemo {
         }
         System.out.println("Adding again");
         System.out.println("------------");
+
         for(int i=0;i<100;i+=10){
             Set.add("Str"+i);
             System.out.println("Str"+i+" -> "+Set+" ("+Set.isEmpty()+")");
         }
         System.out.println();
+
         System.out.println("Membership testing");
         System.out.println("------------------");
+
         for(int i=0;i<200;i+=10){
             System.out.println("Str"+i+": "+Set.contains("Str"+i));
         }
         System.out.println();
 
-        System.out.println("Removing");
+        System.out.println("Removing"); 
         System.out.println("--------");
 
-        // for(int i=0;i<100;i+=10){
-        //     System.out.println(Set+" ("+Set.contains("Str"+i)+") -> Str"+i);
-        //     Set.remove("Str"+i);
+        Random random = new Random(12345);
+        while(!Set.isEmpty()){
+            int randomNumber=random.nextInt(10);
+            String temp="Str"+randomNumber*10;
 
-        // }
-        
+            if(Set.contains(temp)){
+                 System.out.println(Set+" ("+Set.isEmpty()+") -> "+temp);
+                 Set.remove(temp);
+            }
+        }
+        System.out.println(Set+" ("+Set.isEmpty()+")");
+         
     }
-
 }
+
+
+
 
 
 /*REQUIRED OUTPUT::
