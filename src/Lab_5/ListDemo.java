@@ -43,18 +43,22 @@ public class ListDemo{
         System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
         }
         list.add(0, "Str"+0);
-        System.out.println("Str0 @ 0 -> "+list);
+        System.out.println("Str0 @ 0 -> "+list+" ("+list.isEmpty()+")");
         System.out.println();
         System.out.println("Removing elements < Str1000");
-        System.out.println("---------------------------");
-        // for(int i=9;i>0;i--){
-        //     int temp=i*1000;
-        //     list.remove("Str"+temp);
-        //     //System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
-        //     System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+"Str"+temp+" @ "+i);
-        //    }
+        System.out.println("------------------------");
+        Random random= new Random(12345);
 
-        //System.out.println(list);
+         for(int i=9;i>0;i--){
+            //int temp2=random.nextInt(10);
+           // System.out.println(temp2);
+             int temp=i*1000;
+             list.remove("Str"+temp);
+             //System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
+             System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+"Str"+temp+" @ "+i);
+            }
+
+
 
 
 
