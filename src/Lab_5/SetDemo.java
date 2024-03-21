@@ -22,6 +22,13 @@ public class SetDemo {
         for(int i=0;i<100;i+=10){
             Set.add("Str"+i);
             System.out.println("Str"+i+" -> "+Set+" ("+Set.isEmpty()+")");
+            System.out.println();
+        }
+        System.out.println("Membership Checking");
+        System.out.println("------------");
+        for(int i=0;i<100;i+=10){
+            System.out.println("Str"+i+":"+Set+" ("+Set.isEmpty()+")");
+            System.out.println();
         }
     }
 
