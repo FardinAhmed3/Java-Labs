@@ -42,11 +42,34 @@ public class ListDemo{
         list.add(i, "Str"+temp);
         System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
         }
+        list.add(0, "Str"+0);
+        System.out.println("Str0 @ 0 -> "+list);
         System.out.println();
         System.out.println("Removing elements < Str1000");
-        System.out.println("------------------------");
-        
+        System.out.println("---------------------------");
+        // for(int i=9;i>0;i--){
+        //     int temp=i*1000;
+        //     list.remove("Str"+temp);
+        //     //System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
+        //     System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+"Str"+temp+" @ "+i);
+        //    }
+
+        //System.out.println(list);
+
+
 
 
 }
 }
+
+/*
+ * 4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)↵
+Str0·@·0·->·[Str0,·Str0,·Str1000,·Str10,·Str2000,·Str20,·Str3000,·Str30,·Str4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)↵
+↵
+Removing·elements·<·Str1000↵
+------------------------↵
+[Str0,·Str0,·Str1000,·Str10,·Str2000,·Str20,·Str3000,·Str30,·Str4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)·->·Str10·@·3↵
+[Str0,·Str0,·Str1000,·Str2000,·Str20,·Str3000,·Str30,·Str4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)·->·Str0·@·1↵
+[Str0,·Str1000,·Str2000,·Str20,·Str3000,·Str30,·Str4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)·->·Str0·@·0↵
+[Str1000,·Str2000,·Str20,·Str3000,·Str30,·Str4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]↵
+ */
