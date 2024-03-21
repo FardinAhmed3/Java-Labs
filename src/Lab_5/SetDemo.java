@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Random;
 
 
 //Lab 5.13 (Set Demo using HashSet)
@@ -33,11 +34,13 @@ public class SetDemo {
 
         System.out.println("Removing");
         System.out.println("--------");
-        for(int i=0;i<100;i+=10){
-            System.out.println(Set+" ("+Set.contains("Str"+i)+") -> Str"+i);
-            Set.remove("Str"+i);
 
-        }
+        // for(int i=0;i<100;i+=10){
+        //     System.out.println(Set+" ("+Set.contains("Str"+i)+") -> Str"+i);
+        //     Set.remove("Str"+i);
+
+        // }
+        
     }
 
 }
