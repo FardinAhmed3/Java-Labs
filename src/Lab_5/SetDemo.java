@@ -25,11 +25,20 @@ public class SetDemo {
         }
         System.out.println();
         System.out.println("Membership Checking");
-        System.out.println("------------");
-        for(int i=0;i<100;i+=10){
-            System.out.println("Str"+i+":"+Set+" ("+Set.isEmpty()+")");
+        System.out.println("------------------");
+        for(int i=0;i<200;i+=10){
+            System.out.println("Str"+i+": "+Set.contains("Str"+i));
         }
         System.out.println();
+
+        System.out.println("Removing");
+        System.out.println("--------");
+        System.out.println(Set);
+        for(int i=0;i<100;i+=10){
+            System.out.println(Set+" ("+Set.contains("Str"+i)+") -> Str"+i);
+            Set.remove("Str"+i);
+
+        }
     }
 
 }
