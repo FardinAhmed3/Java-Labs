@@ -39,7 +39,6 @@ public class DequeDemo {
         }
         System.out.println(arrDeq+" ("+arrDeq.isEmpty()+")");
 
-        System.out.println(arrDeq + " (" + arrDeq.isEmpty() + ")");
     }
 }
 
