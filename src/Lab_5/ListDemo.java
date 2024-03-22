@@ -48,23 +48,38 @@ public class ListDemo{
         System.out.println("Removing elements < Str1000");
         System.out.println("------------------------");
         Random random= new Random(12345);
+      int temp2=random.nextInt(10);
+        //  for(int i=9;i>0;i--){
 
-         for(int i=9;i>0;i--){
-            //int temp2=random.nextInt(10);
-           // System.out.println(temp2);
-             int temp=i*1000;
-             list.remove("Str"+temp);
-             //System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
-             System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+"Str"+temp+" @ "+i);
+        //    // System.out.println(temp2);
+        //      int temp=i*1000;
+        //      list.remove("Str"+temp);
+        //      //System.out.println("Str"+temp+" @ "+i+" -> "+list+" ("+list.isEmpty()+")");
+        //      System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+"Str"+temp+" @ "+i);
+        //     }
+        //System.out.println(list.remove(temp2));
+        // for (int i = list.size() - 1; i >= 0; i--) {
+        //     String element = list.get(i);
+        //     if (element.compareTo("Str1000") < 0) {
+        //         System.out.println("Removing: " + element);
+        //         list.remove(i);
+        //     }
+        // }
+        // Remove elements with value < "Str1000"
+        for(int i=list.size()-1;i>=0;i--){
+            String element= list.get(i);
+            if (element.compareTo("Str1000")<0){
+                System.out.println(list+ " ("+list.isEmpty()+")"+" -> "+element+" @ "+i);
+                list.remove(i);
             }
 
-
-
-
+        }
+        System.out.println(list);
+        }
 
 
 }
-}
+
 
 /*
  * 4000,·Str40,·Str5000,·Str50,·Str6000,·Str60,·Str7000,·Str70,·Str8000,·Str80,·Str9000,·Str90]·(false)↵
