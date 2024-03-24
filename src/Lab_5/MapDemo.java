@@ -12,7 +12,7 @@ public class MapDemo {
         for (int i=10;i<20;i++){
             String key="Str"+i;
             map.put(key,i*i);
-            System.out.println(key);
+            System.out.println("("+key+": "+map.get(key)+") -> "+map);
 
         }
         //System.out.println(map);
