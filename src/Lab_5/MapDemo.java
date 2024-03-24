@@ -5,7 +5,15 @@ import java.util.HashMap;
 public class MapDemo {
     public static void main(String[] args) {
         
-        System.out.println("====== HashMap =======");
+        HashMap<String,Integer> map=new HashMap<>();
+        System.out.println("========== Map ==========");
+        System.out.println("Putting");
+
+        for (int i=10;i<20;i++){
+            String key="Str"+i;
+        }
+
+
 
     }
 }
