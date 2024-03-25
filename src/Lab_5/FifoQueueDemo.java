@@ -21,7 +21,13 @@ public class FifoQueueDemo {
 
         System.out.println("Removing");
         System.out.println("--------");
-
+        for (int i=0;i<100;i+=10){
+            String temp="Str"+i;
+            System.out.println(ad+" ("+ad.isEmpty()+")"+" -> "+temp);
+            ad.remove(temp);
+        }
+        
+        System.out.println(ad+" ("+ad.isEmpty()+")");
 
 
     }
