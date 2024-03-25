@@ -11,6 +11,12 @@ public class FifoQueueDemo {
         System.out.println();
         System.out.println("------");
 
+        for (int i=0;i<100;i+=10){
+            String temp="Str"+i;
+            ad.add(temp);
+            System.out.println(temp+" -> "+ad+" ("+ad.isEmpty()+")");
+        }
+
 
 
     }
