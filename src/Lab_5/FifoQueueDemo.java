@@ -6,6 +6,7 @@ public class FifoQueueDemo {
         ArrayDeque<String> ad=new ArrayDeque<>();
 
         System.out.println("========== FifoQueue ==========");
+        System.out.println(ad+" ("+ad.isEmpty()+")");
 
 
 
