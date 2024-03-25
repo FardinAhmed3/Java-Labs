@@ -9,6 +9,8 @@ public class FifoQueueDemo {
         System.out.println(ad+" ("+ad.isEmpty()+")");
 
         System.out.println();
+        
+        System.out.println("Adding");
         System.out.println("------");
 
         for (int i=0;i<100;i+=10){
