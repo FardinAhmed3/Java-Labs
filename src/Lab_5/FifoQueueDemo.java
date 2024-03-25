@@ -17,6 +17,11 @@ public class FifoQueueDemo {
             System.out.println(temp+" -> "+ad+" ("+ad.isEmpty()+")");
         }
 
+        System.out.println();
+
+        System.out.println("Removing");
+        System.out.println("--------");
+
 
 
     }
