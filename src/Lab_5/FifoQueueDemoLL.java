@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 //Lab 5.9 FIFO Queue Demo usign LinkedList
-public class FifoQueueDemo {
+public class FifoQueueDemoLL {
     public static void main(String[] args) {
         LinkedList<String> ad=new LinkedList<>();
 
