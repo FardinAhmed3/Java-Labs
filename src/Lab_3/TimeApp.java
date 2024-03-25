@@ -1,7 +1,7 @@
 package Lab_3;
 
 public class TimeApp {
-	public static void demo(Time time) {
+	public static void Main(Time time) {
 		System.out.println("Should be receiving time of 11:45pm");
 		System.out.println(time);
 		System.out.println("12 hour: " + time.get12Hour());
