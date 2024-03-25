@@ -8,6 +8,9 @@ public class FifoQueueDemo {
         System.out.println("========== FifoQueue ==========");
         System.out.println(ad+" ("+ad.isEmpty()+")");
 
+        System.out.println();
+        System.out.println("------");
+
 
 
     }
