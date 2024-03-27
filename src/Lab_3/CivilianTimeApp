@@ -1,5 +1,3 @@
-
-
 public class CivilianTimeApp {
     public static void main(String[] args) {
         CivilianTime time = new CivilianTime();
