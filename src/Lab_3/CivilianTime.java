@@ -1,42 +1,50 @@
 public class CivilianTime implements Time {
-    private int hours; // 1-12
-    private int minutes; // 0-59
-    private String amPm; // AM or PM
-
-    @Override
+    private int hours;
+    private int minutes; 
+    private String ampm;
+    
+    public CivilianTime(String timeStr) {
+        set(timeStr);
+    }
+    
     public void set(String timeStr) {
-        // Expected format: "HH:MM AM" or "HH:MM PM"
-        String[] parts = timeStr.split("[ :]+");
-        this.hours = Integer.parseInt(parts[0]);
-        this.minutes = Integer.parseInt(parts[1]);
-        this.amPm = parts[2];
+        String[] parts = timeStr.split("[:]");
+        hours = Integer.parseInt(parts[0]);
+        minutes = Integer.parseInt(parts[1].substring(0, 2));
+        ampm = parts[1].substring(2).toLowerCase();
     }
-
-    @Override
+    
     public int get12Hour() {
-        return this.hours;
+        return hours;
     }
-
-    @Override
+    
     public int get24Hour() {
-        return this.amPm.equals("AM") ? this.hours : (this.hours % 12) + 12;
+        if ("pm".equals(ampm) && hours < 12) {
+            return hours + 12;
+        } else if ("am".equals(ampm) && hours == 12) {
+            return 0;
+        }
+        return hours;
     }
-
-    @Override
+    
     public int getMinute() {
-        return this.minutes;
+        return minutes;
     }
-
-    @Override
+    
     public void tick() {
-        this.minutes++;
-        if (this.minutes >= 60) {
-            this.minutes = 0;
-            this.hours++;
-            if (this.hours > 12) {
-                this.hours = 1;
-                this.amPm = this.amPm.equals("AM") ? "PM" : "AM";
+        minutes++;
+        if (minutes == 60) {
+            minutes = 0;
+            hours++;
+            if (hours == 12) {
+                ampm = "pm".equals(ampm) ? "am" : "pm";
+            } else if (hours == 13) {
+                hours = 1;
             }
         }
+    }
+    
+    public String toString() {
+        return String.format("%02d:%02d%s", hours, minutes, ampm);
     }
 }
