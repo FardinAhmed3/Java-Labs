@@ -1,0 +1,11 @@
+
+
+public class CivilianTimeApp {
+    public static void main(String[] args) {
+        CivilianTime time = new CivilianTime();
+        time.set("11:59 PM");
+        System.out.println(time.get12Hour() + ":" + time.getMinute() + " " + (time.get24Hour() >= 12 ? "PM" : "AM"));
+        time.tick();
+        System.out.println(time.get12Hour() + ":" + time.getMinute() + " " + (time.get24Hour() >= 12 ? "PM" : "AM"));
+    }
+}
