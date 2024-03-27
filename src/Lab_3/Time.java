@@ -1,4 +1,3 @@
-package Lab_3;
 interface Time {
 	void set(String timeStr);
 	int get12Hour();
