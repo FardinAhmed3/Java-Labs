@@ -35,6 +35,15 @@ public class Set {
 		return size;
 	}
 	
+	Boolean isEmpty() {
+		if(size>0) {
+			return false;
+		}
+		return true;
+	}
+	
+	
+	
 	/*
 	Java runtime calls this when 
 	it wants a string representation
