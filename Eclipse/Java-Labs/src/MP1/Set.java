@@ -7,24 +7,47 @@ public class Set {
 	
 	
 	//Constructor for creating int arrays with given capacity
-	public Set(int capacity) {
-		this.capacity=capacity;
-		int[] arr=new int[capacity];
+	Set(int Capacity) {
+		this.capacity=Capacity;
+		arr=new int[capacity];
 	}
 	
 	//Constructor for creating int array with the default capacity
-	public Set() {
-		int[]arr=new int[DEFAULT_CAPACITY];
+	Set() {
+		this(DEFAULT_CAPACITY);
 	}
 	
 	void set(int index, int value) {
 		arr[index]=value;
+		
 	}
 	
 	void add(int value) {
 		arr[size]=value;
 		size++;
 	}
+	
+	int getCapacity() {
+		return capacity;
+	}
+	
+	int getSize() {
+		return size;
+	}
+	
+	/*
+	Java runtime calls this when 
+	it wants a string representation
+	*/
+	public String toString() {
+		String result="{";
+		for (int i=0;i<size;i++) 
+			result+=arr[i]+(i<size-1 ? ",":"");
+		result+="}";
+		return result;
+		}
+	
+
 }
 
 
