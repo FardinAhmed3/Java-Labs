@@ -42,6 +42,20 @@ public class Set {
 		return true;
 	}
 	
+	void remove(int index) {
+		if(index>=0 && index<size) {
+			for(int i=index;i<size-1;i++) {
+				arr[i]=arr[i+1];
+			}
+			size--;
+		}
+	}
+	
+	void clear() {
+		size=0;
+	}
+	
+	
 	
 	
 	/*
