@@ -17,7 +17,8 @@ public class Set {
 		this(DEFAULT_CAPACITY);
 	}
 	
-	void set(int index, int value) {
+	void set(int index, int value) throws Exception {
+		if(index>= size||index>0) throw new Exception("Index cannot be larger than size!");
 		arr[index]=value;
 		
 	}
@@ -26,6 +27,7 @@ public class Set {
 		arr[size]=value;
 		size++;
 	}
+	
 	
 	int getCapacity() {
 		return capacity;

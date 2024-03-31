@@ -2,7 +2,7 @@ package MP1;
 
 public class SetApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println("SetApp");
 		
 		Set set= new Set(15);
@@ -23,8 +23,15 @@ public class SetApp {
 		System.out.println();
 		System.out.println(set);
 		
-		set.clear();
+		//set.clear();
 		System.out.println(set.getCapacity()+" "+set.getSize());
+		System.out.println(set.isEmpty());
+		
+		try {
+			set.set(15,10);
+		} catch (IndexOutOfBoundsException e) {
+			System.out.println("Caught exception "+e);
+		}
 		System.out.println(set);
 		
 	}
