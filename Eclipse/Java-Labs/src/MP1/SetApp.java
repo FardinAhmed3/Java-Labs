@@ -16,10 +16,10 @@ public class SetApp {
 		//setv2.add();
 		System.out.println("Is setv2 empty? Answer is -> "+setv2.isEmpty());
 		System.out.println();
-		System.out.println(set.getCapacity()+" "+set.getSize());
+		System.out.println("Set capacity and size "+set.getCapacity()+" "+set.getSize());
 		
 		set.remove(0);
-		System.out.println(set.getCapacity()+" "+set.getSize());
+		System.out.println("After removing index 0 "+set.getCapacity()+" "+set.getSize());
 		System.out.println();
 		System.out.println(set);
 		

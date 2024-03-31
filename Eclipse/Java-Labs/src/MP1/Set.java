@@ -51,6 +51,12 @@ public class Set {
 		}
 	}
 	
+	/*
+	 * This clear() method is objectively more
+	 * memory efficient as opposed to a new system
+	 * where it creates a smaller array and copies
+	 * the elements over. clear() is O(1) at the moment
+	 */
 	void clear() {
 		size=0;
 	}
