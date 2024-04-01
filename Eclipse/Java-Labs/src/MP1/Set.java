@@ -52,6 +52,20 @@ public class Set {
 			size--;
 		}
 	}
+	boolean contains(int value) {
+		for(int i=0;i<size;i++) 
+			if (arr[i]==value)
+				return true;
+		return false;
+	}
+	
+	void exclusiveAdd(int value) {
+		if(!contains(value)) { 
+			arr[size]=value;
+			size++;
+			System.out.println("Value added");}
+		else{System.out.println("Set already contains value");}
+	}
 	
 	/*
 	 * This clear() method is objectively more
