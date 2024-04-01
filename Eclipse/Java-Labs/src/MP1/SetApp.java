@@ -28,10 +28,15 @@ public class SetApp {
 		System.out.println(set.isEmpty());
 		
 		try {
-			set.set(15,10);
+		//	set.set(1,1);
 		} catch (IndexOutOfBoundsException e) {
 			System.out.println("Caught exception "+e);
 		}
+		System.out.println(set);
+		
+		System.out.println(set.contains(5));
+		set.exclusiveAdd(5);
+		set.exclusiveAdd(8);
 		System.out.println(set);
 		
 	}
