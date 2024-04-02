@@ -1,4 +1,4 @@
-package MP1;
+package mp1;
 
 public class Set_2 {
 int arr[];
