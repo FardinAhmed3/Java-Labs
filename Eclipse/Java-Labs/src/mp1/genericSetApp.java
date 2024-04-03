@@ -4,11 +4,13 @@ public class genericSetApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		genericSet<String> Set=new genericSet<>();
+		genericSet<Integer> Set=new genericSet<>();
 		
-		Set.add("4");
+		//Set.add(4);
 		System.out.println(Set);
 		
+		Set.append(10);
+		System.out.println(Set);
 	}
 
 }
