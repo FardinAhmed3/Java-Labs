@@ -11,8 +11,15 @@ public class genericSet<E> {
 	}
 	
 	void add(E value) {
-		arr[size++]=value;
+		arr[size]=value;
+		size++;
 	}
+	
+	void append (E value) {
+		arr[size]=value;
+	}
+	
+	
 	
 	public String toString() {	//camelCase the NAME!
 		String result ="[";
