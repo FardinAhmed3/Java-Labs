@@ -39,6 +39,13 @@ public class SetApp {
 		set.exclusiveAdd(8);
 		System.out.println(set);
 		
+		Set set2= new Set();
+		for(int i=0;i<1000;i+=5)
+			set2.add(i);
+		
+		
+		System.out.println(set2);
+		
 	}
 
 }

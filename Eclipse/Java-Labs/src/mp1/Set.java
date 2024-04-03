@@ -24,8 +24,10 @@ public class Set {
 	}
 	
 	void add(int value) {
-		arr[size]=value;
-		size++;
+		if(size>=arr.length) {
+			checkCapacity2();}
+		else{arr[size]=value;
+	size++;}
 	}
 	
 	
@@ -66,7 +68,27 @@ public class Set {
 			System.out.println("Value added");}
 		else{System.out.println("Set already contains value");}
 	}
+	void checkCapacity() {
+		if (size < capacity) return;
+			int [] t = new int[capacity*2];
+			
+		for (int i = 0; i < size; i++)
+			t[i] = arr[i];
+		arr = t;
+	}
+	private void checkCapacity2(){
+		if(size	<capacity) {return;}
+		else{
+			capacity =capacity*2;
+			int[] temp=new int[capacity];
+			for(int i=0; i<size; i++) {
+				temp[i] = arr[i];
+			}
+		arr=temp;}
+	}
 	
+	
+
 	/*
 	 * This clear() method is objectively more
 	 * memory efficient as opposed to a new system
