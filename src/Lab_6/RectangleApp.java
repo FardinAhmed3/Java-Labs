@@ -1,3 +1,5 @@
+//Lab 6.1.2
+
 public class RectangleApp implements Shape {
     int length;
     int width;
