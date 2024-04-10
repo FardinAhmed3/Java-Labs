@@ -1,4 +1,4 @@
-package mp1;
+package MP1;
 
 public class Set {
 	static final int DEFAULT_CAPACITY=10;

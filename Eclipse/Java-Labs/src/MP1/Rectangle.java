@@ -1,4 +1,4 @@
-package mp1;
+package MP1;
 
 
 public class Rectangle implements Shape {
