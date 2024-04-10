@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 
 public class WeatherService implements WeatherAlert {
 	public String sendAlert(String message) {

@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 public class BasicCalculator implements Calculator {
 
 	public double add(double x, double y) {

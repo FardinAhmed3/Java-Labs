@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 
 public interface Calculator {
 	double add(double x, double y);

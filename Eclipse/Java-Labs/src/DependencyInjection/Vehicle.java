@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 
 public interface Vehicle {
 void drive();

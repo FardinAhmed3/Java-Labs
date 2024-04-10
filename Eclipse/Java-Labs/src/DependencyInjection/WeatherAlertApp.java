@@ -1,4 +1,4 @@
-package dependancyInjection;
+package DependencyInjection;
 
 public class WeatherAlertApp {
 	WeatherAlert alert;
