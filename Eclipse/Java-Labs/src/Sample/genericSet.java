@@ -16,8 +16,9 @@ public class genericSet<E>{
 		capacity=capacity*2;
 		temp=(E[]) new Object[capacity];
 		for (int i=0;i<size;i++){
+		temp[i]=arr[i];
 		}
-			
+		arr=temp;
 		}
 	}
 	
