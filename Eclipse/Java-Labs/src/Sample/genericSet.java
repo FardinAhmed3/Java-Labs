@@ -11,11 +11,14 @@ public class genericSet<E>{
 	}
 	void checkCapacity(){
 		if(size<capacity){return;}
+		else{
 		E[] temp;
 		capacity=capacity*2;
 		temp=(E[]) new Object[capacity];
-		
-	
+		for (int i=0;i<size;i++){
+		}
+			
+		}
 	}
 	
 	
