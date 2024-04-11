@@ -9,7 +9,10 @@ public class genericSet<E>{
 		this.capacity=INITIAL_CAPACITY;
 		arr=(E[]) new Object[capacity];
 	}
-	
+	void checkCapacity(){
+		if(size<capacity){return;}
+		E[] temp;
+		capacity=capacity*2;}
 	
 	
 	
