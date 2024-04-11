@@ -9,6 +9,8 @@ public class genericSet<E>{
 		this.capacity=INITIAL_CAPACITY;
 		arr=(E[]) new Object[capacity];
 	}
+
+	
 	void checkCapacity(){
 		if(size<capacity){return;}
 		else{
@@ -20,6 +22,15 @@ public class genericSet<E>{
 		}
 		arr=temp;
 		}
+	}
+
+	public String toString(){
+		String result="{";
+		for (int i=0;i<size;i++){
+		result+=arr[i]+(i<size-1?":":"");	
+		}
+		result+="}";
+		return result;
 	}
 	
 	
