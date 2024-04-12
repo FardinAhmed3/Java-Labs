@@ -23,8 +23,11 @@ public class genericSet<E>{
 		arr=temp;
 		}
 	}
-	public boolean contains(){
-		for (int i=0;i<size;i++){}
+	public boolean contains(int value){
+		for (int i=0;i<size;i++){
+		if (arr[i]==value){return true;}
+		}
+		return false;
 	}
 
 	public String toString(){
