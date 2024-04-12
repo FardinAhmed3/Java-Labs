@@ -23,6 +23,7 @@ public class genericSet<E>{
 		arr=temp;
 		}
 	}
+	public boolean contains(){}
 
 	public String toString(){
 		String result="{";
