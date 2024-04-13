@@ -5,7 +5,7 @@ public class genericSet<E>{
 	int size,capacity=0;
 	static final int INITIAL_CAPACITY=10;
 	
-	genericSet(int Capacity){
+	genericSet(){
 		this.capacity=INITIAL_CAPACITY;
 		arr=(E[]) new Object[capacity];
 	}
