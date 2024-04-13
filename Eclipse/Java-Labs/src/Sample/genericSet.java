@@ -23,11 +23,11 @@ public class genericSet<E>{
 		arr=temp;
 		}
 	}
-	public void add(int value){
+	public void add(E value){
 		checkCapacity();
 		arr[size]=value;
 		size++;}
-	public boolean contains(int value){
+	public boolean contains(E value){
 		for (int i=0;i<size;i++){
 		if (arr[i]==value){return true;}
 		}
