@@ -42,6 +42,9 @@ public class genericSet<E>{
 		result+="}";
 		return result;
 	}
+	public void set(int index, E value) {
+		arr[index]=value;
+	}
 	
 	
 	
