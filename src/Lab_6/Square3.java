@@ -1,6 +1,5 @@
 //lab 6.4
 
-
 public class Square extends Rectangle {
 private int side;
 

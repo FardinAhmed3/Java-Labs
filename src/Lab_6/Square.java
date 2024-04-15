@@ -1,4 +1,5 @@
 //lab 6.2.1
+
 public class Square implements Shape {
     private int side;
 
