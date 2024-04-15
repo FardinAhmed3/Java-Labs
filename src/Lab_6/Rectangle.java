@@ -1,4 +1,39 @@
-// //Lab 6.1.2
+//Lab 6.1.2
+
+
+public class Rectangle implements Shape {
+    int width;
+    int height;
+
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public int perimeter() {
+        return 2 * (width + height);
+    }
+
+    public int area() {
+        return width * height;
+    }
+
+    public int numSides() {
+        return 4;
+    }
+
+    public boolean isQuadrilateral() {
+        return true;
+    }
+
+    public boolean isEquilateral() {
+        return width == height;
+    }
+
+    public String toString() {
+        return String.format("a rectangle with a width of %d and a height of %d", height, width);
+    }
+}
 
 // public class Rectangle implements Shape {
 //     int length;
@@ -45,36 +80,3 @@
 //         System.out.println("isEquilateral: " + myRectangle.isEquilateral());
 //     }
 // }
-public class Rectangle implements Shape {
-    int width;
-    int height;
-
-    public Rectangle(int width, int height) {
-        this.width = width;
-        this.height = height;
-    }
-
-    public int perimeter() {
-        return 2 * (width + height);
-    }
-
-    public int area() {
-        return width * height;
-    }
-
-    public int numSides() {
-        return 4;
-    }
-
-    public boolean isQuadrilateral() {
-        return true;
-    }
-
-    public boolean isEquilateral() {
-        return width == height;
-    }
-
-    public String toString() {
-        return String.format("a rectangle with a width of %d and a height of %d", height, width);
-    }
-}
