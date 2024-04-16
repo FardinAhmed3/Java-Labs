@@ -5,7 +5,6 @@ import java.util.HashMap;
 public class HashMaps {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// This is how to implement a hashmap
 
 		HashMap<String, String> Cities = new HashMap<String, String>();
