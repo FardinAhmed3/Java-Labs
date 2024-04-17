@@ -19,4 +19,12 @@ public class ArrayDeque<E> {
     int getCapacity() {return arr.length;}
 	int size() {return size;}
 
+    public String toString() {
+		String result = "{";
+		for (int i = 0; i < size; i++)
+			result += arr[i] + (i < size-1 ? ", " : "");
+		result += "}";
+		return result;
+	}
+
 }
