@@ -8,6 +8,15 @@ public class ArrayDeque<E> {
 		this.capacity=INITIAL_CAPACITY;
 		arr=(E [])new Object[capacity];		
 	}
-
+    boolean contains(E elementOfSet) {		
+        for (int i = 0; i < size; i++) {
+            if (arr[i].equals(elementOfSet)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    int getCapacity() {return arr.length;}
+	int size() {return size;}
 
 }
