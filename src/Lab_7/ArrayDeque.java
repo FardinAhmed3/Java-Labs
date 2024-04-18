@@ -9,6 +9,24 @@ public class ArrayDeque<E> {
 		this.capacity=INITIAL_CAPACITY;
 		arr=(E [])new Object[capacity];		
 	}
+
+    void checkCapacity(){
+        if (size<capacity){return;}
+		else{
+			capacity =capacity*2;
+			@SuppressWarnings("unchecked")
+			E [] temp=(E[]) new Object[capacity];
+			for(int i=0; i<size; i++) {
+				temp[i] = arr[(front+i)%getCapacity()];
+			}
+		arr=temp;
+        front=0;
+        rear=size;
+    }
+}
+
+
+
     boolean contains(E elementOfSet) {		
         for (int i = 0; i < size; i++) {
             if (arr[i].equals(elementOfSet)) {
@@ -17,6 +35,7 @@ public class ArrayDeque<E> {
         }
         return false;
     }
+
     int getCapacity() {return arr.length;}
 	int size() {return size;}
 
