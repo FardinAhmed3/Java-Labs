@@ -25,6 +25,13 @@ public class ArrayDeque<E> {
     }
 }
 
+    void addFirst(E value){
+        checkCapacity();
+        front=(front-1+getCapacity())% getCapacity();
+        arr[front]=value;
+        size++;
+    } 
+
 
 
     boolean contains(E elementOfSet) {		
