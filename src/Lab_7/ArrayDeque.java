@@ -1,6 +1,7 @@
 public class ArrayDeque<E> {
     E[] arr;
     int size,capacity=0;
+    int front, rear=0;
     static final int INITIAL_CAPACITY=5;
 
     @SuppressWarnings("unchecked")
