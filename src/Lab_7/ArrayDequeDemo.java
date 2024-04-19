@@ -6,6 +6,11 @@ public class ArrayDequeDemo {
     for(int i=0;i<10;i++){
         ArrayDeque.addFirst(i);
     }
+    for(int i=0;i<10;i++){
+        ArrayDeque.addLast(i);
+    }
+
+
     System.out.println(ArrayDeque);
 
 }
