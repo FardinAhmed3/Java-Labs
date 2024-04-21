@@ -35,8 +35,8 @@ public class ArrayDeque<E> {
 
     void addLast(E Value){
         checkCapacity();
-        rear=(rear-1+capacity)%capacity;
-        arr[rear]=value;
+        rear=(arr.length-1+capacity)%capacity;
+        arr[rear]=Value;
         size++;
     }
 
