@@ -33,6 +33,13 @@ public class ArrayDeque<E> {
         size++;
     }
 
+    void addLast(E Value){
+        checkCapacity();
+        rear=(rear-1+capacity)%capacity;
+        arr[rear]=value;
+        size++;
+    }
+
     boolean contains(E elementOfSet) {
         for (int i = 0; i < size; i++) {
             if (arr[(front + i) % capacity].equals(elementOfSet)) {
