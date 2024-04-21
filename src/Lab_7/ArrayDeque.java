@@ -33,10 +33,17 @@ public class ArrayDeque<E> {
         size++;
     }
 
-    void addLast(E Value){
+    // void addLast(E Value){
+    //     checkCapacity();
+    //     rear=(arr.length-1+capacity)%capacity;
+    //     arr[rear]=Value;
+    //     size++;
+    // }
+
+    public void addLast(E value) {
         checkCapacity();
-        rear=(arr.length-1+capacity)%capacity;
-        arr[rear]=Value;
+        arr[rear] = value;
+        rear = (rear + 1) % getCapacity();
         size++;
     }
 
