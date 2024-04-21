@@ -33,6 +33,7 @@ public class ArrayDeque<E> {
         size++;
     }
 
+    /*Wrong addLast Method */
     // void addLast(E Value){
     //     checkCapacity();
     //     rear=(arr.length-1+capacity)%capacity;
@@ -40,6 +41,8 @@ public class ArrayDeque<E> {
     //     size++;
     // }
 
+
+    //This method has a null value during operation 
     public void addLast(E value) {
         checkCapacity();
         arr[rear] = value;
