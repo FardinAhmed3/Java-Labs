@@ -13,17 +13,16 @@ public class ArrayDeque<E> {
     void checkCapacity() {
         if (size < capacity) {
             return;
-        } else {
-            capacity = capacity * 2;
-            @SuppressWarnings("unchecked")
-            E[] temp = (E[]) new Object[capacity];
-            for (int i = 0; i < size; i++) {
-                temp[i] = arr[(front + i) % size];
-            }
-            arr = temp;
-            front = 0;
-            rear = size - 1;
         }
+        capacity = capacity * 2;
+        @SuppressWarnings("unchecked")
+        E[] temp = (E[]) new Object[capacity];
+        for (int i = 0; i < size; i++) {
+            temp[i] = arr[(front + i) % arr.length]; // Use arr.length for modulus
+        }
+        arr = temp;
+        front = 0;
+        rear = size;
     }
 
     void addFirst(E value) {
@@ -41,13 +40,7 @@ public class ArrayDeque<E> {
     void removeLast(E Value){
         
     }
-    /*Wrong addLast Method */
-    // void addLast(E Value){
-    //     checkCapacity();
-    //     rear=(arr.length-1+capacity)%capacity;
-    //     arr[rear]=Value;
-    //     size++;
-    // }
+
 
 
     //This method has a null value during operation 
