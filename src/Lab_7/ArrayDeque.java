@@ -41,8 +41,6 @@ public class ArrayDeque<E> {
         
     }
 
-
-
     //This method has a null value during operation 
     void addLast(E value) {
         checkCapacity();
