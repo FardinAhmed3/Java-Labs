@@ -32,7 +32,15 @@ public class ArrayDeque<E> {
         arr[front] = value;
         size++;
     }
+    void removeFirst(E Value){
 
+
+
+    }
+
+    void removeLast(E Value){
+        
+    }
     /*Wrong addLast Method */
     // void addLast(E Value){
     //     checkCapacity();
