@@ -1,15 +1,17 @@
 public class ArrayDeque<E> {
     E[] arr;
-    int size, capacity = 0;
-    int front, rear = 0;
+    int size, capacity;
+    int front, rear;
     static final int INITIAL_CAPACITY = 5;
 
     @SuppressWarnings("unchecked")
     ArrayDeque() {
-        this.capacity = INITIAL_CAPACITY;
+        capacity = INITIAL_CAPACITY;
         arr = (E[]) new Object[capacity];
+        front = 0;
+        rear = 0;
+        size = 0;
     }
-
     void checkCapacity() {
         if (size < capacity) {
             return;
