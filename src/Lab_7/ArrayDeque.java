@@ -33,15 +33,24 @@ public class ArrayDeque<E> {
         arr[front] = value;
         size++;
     }
-    void removeFirst(E Value){
+    // void removeFirst(E Value){
 
-    }
+    // }
 
-    void removeLast(E Value){
+    // void removeLast(E Value){
         
+    // }
+    E removeLast() {
+        if (size == 0) {
+            return null;
+        }
+        rear = (rear - 1 + capacity) % capacity;
+        E value = arr[rear];
+        size--;
+        return value;
     }
 
-    //This method has a null value during operation 
+
     void addLast(E value) {
         checkCapacity();
         arr[rear] = value;
