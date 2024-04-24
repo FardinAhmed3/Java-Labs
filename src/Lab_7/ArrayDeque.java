@@ -36,6 +36,15 @@ public class ArrayDeque<E> {
     // void removeFirst(E Value){
 
     // }
+    E removeFirst() {
+        if (size == 0) {
+            return null;
+        }
+        E value = arr[front];
+        front = (front + 1) % capacity;
+        size--;
+        return value;
+    }
 
     // void removeLast(E Value){
         
