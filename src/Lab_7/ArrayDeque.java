@@ -33,9 +33,7 @@ public class ArrayDeque<E> {
         arr[front] = value;
         size++;
     }
-    // void removeFirst(E Value){
 
-    // }
     E removeFirst() {
         if (size == 0) {
             return null;
