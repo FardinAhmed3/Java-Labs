@@ -7,6 +7,6 @@ public class Deque {
         System.out.println(integerDeque);
 
         integerDeque.remove(4);
-        
+        for (int i=0;i<100;i++){}
     }
 }
