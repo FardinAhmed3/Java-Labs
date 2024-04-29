@@ -1,6 +1,5 @@
 //Lab 8.01
-import java.util.LinkedList;
-public class Deque {
+public class Deque <E> {
     void addFirst(int value){}
     void addLast(int value){}
     void removeFirst(){}
