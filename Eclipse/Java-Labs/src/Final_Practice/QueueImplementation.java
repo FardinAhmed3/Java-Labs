@@ -27,7 +27,10 @@ public class QueueImplementation {
 		System.out.println(names.peek());
 		System.out.println("The entire queue looks like "+names);
 		
-		String chosen=names.peek();		
+		String chosen=names.peek();
+		System.out.println(chosen);
+
+		
 		
 	}
 }
