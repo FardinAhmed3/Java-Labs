@@ -15,16 +15,16 @@ public class QueueImplementation {
 		names.add("Alain");
 		
 		
-		System.out.println(names);
+		System.out.println("Queue looks like "+names);
 		
-		System.out.println(names.peek());
+		System.out.println("First in queue "+names.peek());
 		
-		System.out.println(names.poll());
-		System.out.println(names);
+		System.out.println("Removing from queue "+names.poll());
+		System.out.println("Queue looks like "+ names);
 		
 		names.add("Jessy");
 		
-		System.out.println(names.peek());
+		System.out.println("First in queue "+names.peek());
 		System.out.println("The entire queue looks like "+names);
 		
 		String chosen=names.peek();
