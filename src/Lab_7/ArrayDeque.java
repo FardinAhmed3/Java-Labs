@@ -4,13 +4,14 @@ public class ArrayDeque<E> implements Deque<E> {
     private int front;
     private int rear;
     private int size;
-
+    
     public ArrayDeque() {
         array = new Object[INITIAL_CAPACITY];
         front = 0;
-        rear = array.length-1;
+        rear = 0;
         size = 0;
     }
+    
 
     @Override
     public void addFirst(E value) {
@@ -18,7 +19,7 @@ public class ArrayDeque<E> implements Deque<E> {
         front = (front - 1 + capacity()) % capacity();
         array[front] = value;
         if (size == 0) {
-            rear = front;
+            rear = (front + 1) % capacity();
         }
         size++;
     }
@@ -64,18 +65,14 @@ public class ArrayDeque<E> implements Deque<E> {
         }
         return value;
     }
-
-    @Override
     public int size() {
         return size;
     }
 
-    @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
-    @Override
     public int capacity() {
         return array.length;
     }
@@ -92,6 +89,7 @@ public class ArrayDeque<E> implements Deque<E> {
             rear = size;
         }
     }
+    
 
     @Override
     public String toString() {
