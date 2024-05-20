@@ -1,19 +1,19 @@
 //Lab 8.04 Singly-Linked, Linear, Two Pointer, Header SC1N
+//Naming in CL is wrong, its  Singly Linked Linear Two Pointer (Head/Tail) with Header node (SL2H)
 
 public class SC1N {
     public E removeLast() {
         if (isEmpty()) throw new CollectionException("Deque", "removeLast", "empty container");
-        var node = tail.next;
-        if (tail.next == tail) {
-            tail = null;
-        } else {
-            while (node.next != tail) {
-                node = node.next;
-            }
-            node.next = tail.next;
-            tail = node;
+        if (header.next == tail) return removeFirst();
+        Node<E> current = header;
+        while (current.next != tail) {
+            current = current.next;
         }
-        return node.next.data;
+        E data = tail.data;
+        tail = current;
+        tail.next = null;
+        return data;
     }
+    
     
 }
