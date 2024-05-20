@@ -77,30 +77,49 @@ public class ArrayDeque<E> implements Deque<E> {
         return array.length;
     }
 
-    private void checkCapacity() {
-        if (size == capacity()) {
-            int newCapacity = capacity() * 2;
-            Object[] newArray = new Object[newCapacity];
-            for (int i = 0; i < size; i++) {
-                newArray[i] = array[(front + i) % capacity()];
-            }
-            array = newArray;
-            front = 0;
-            rear = size;
-        }
-    }
+    // private void checkCapacity() {
+    //     if (size == capacity()) {
+    //         int newCapacity = capacity() * 2;
+    //         Object[] newArray = new Object[newCapacity];
+    //         for (int i = 0; i < size; i++) {
+    //             newArray[i] = array[(front + i) % capacity()];
+    //         }
+    //         array = newArray;
+    //         front = 0;
+    //         rear = size;
+    //     }
+    // }
     
 
-    @Override
-    public String toString() {
-        StringBuilder result = new StringBuilder("{");
-        for (int i = 0; i < size; i++) {
-            result.append(array[(front + i) % capacity()]);
-            if (i < size - 1) {
-                result.append(", ");
-            }
-        }
-        result.append("}");
-        return result.toString();
-    }
+    // public String toString() {
+    //     StringBuilder result = new StringBuilder("{");
+    //     for (int i = 0; i < size; i++) {
+    //         result.append(array[(front + i) % capacity()]);
+    //         if (i < size - 1) {
+    //             result.append(", ");
+    //         }
+    //     }
+    //     result.append("}");
+    //     return result.toString();
+    // }
+    private void checkCapacity(){
+		if(size	<capacity()) {return;}
+		else{
+			capacity =capacity()*2;
+			@SuppressWarnings("unchecked")
+			E [] temp=(E[]) new Object[capacity()];
+			for(int i=0; i<size; i++) {
+				temp[i] = array[i];
+			}
+		arr=temp;
+	}
+}
+
+	public String toString() {
+		String result = "{";
+		for (int i = 0; i < size; i++)
+			result += array[i] + (i < size-1 ? ", " : "");
+		result += "}";
+		return result;
+	}
 }

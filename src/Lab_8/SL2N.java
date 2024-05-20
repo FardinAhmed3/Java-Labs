@@ -1,4 +1,5 @@
 // Lab 8.03 Singly Linked Linear 2 Pointers No Header SL2N
+
 public class SL2N {
     public E removeLast() {
         if (isEmpty()) throw new CollectionException("Deque", "removeLast", "empty container");

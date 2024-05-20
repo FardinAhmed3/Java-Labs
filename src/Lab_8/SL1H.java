@@ -15,7 +15,7 @@ public class SL1H {
     
         E data = p.next.data;
         p.next = null;
-        return data;
+        return data; 
     }
     
 }
