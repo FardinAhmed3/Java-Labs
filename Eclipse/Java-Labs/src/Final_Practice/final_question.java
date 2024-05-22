@@ -45,9 +45,11 @@ public class final_question {
 			
 					
 		}
-		System.out.println(stdDir);
+		//System.out.println(stdDir);
 		
-	System.out.println(revDir);
+	//System.out.println(revDir);
+	}
+}
 		
 		
 		
