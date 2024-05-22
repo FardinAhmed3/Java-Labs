@@ -43,9 +43,7 @@ public class final_question {
 			revDir.put(extension,name);
 			
 			
-			//std= standard
-			//dir=directory
-			
+					
 		}
 		System.out.println(stdDir);
 		
