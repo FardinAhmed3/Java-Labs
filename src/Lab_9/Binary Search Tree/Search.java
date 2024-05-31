@@ -1,16 +1,26 @@
 public class Search {
-    public static <E> boolean search(Node<E> root, E e) {
-        return searchWithPrint(root, e);
-    }
-
-    private static <E> boolean searchWithPrint(Node<E> root, E e) {
+    public static <E extends Comparable<E>> boolean search(Node<E> root, E e) {
         if (root == null) {
             return false;
         }
-        System.out.println("Comparing " + e + " to " + root.data);
-        if (root.data.equals(e)) {
-        return true;
+
+        Node <E> current = root;
+        boolean found = false;
+        while (current != null) {
+            System.out.println("Comparing " + e + " to " + current.data);
+
+            int compare = e.compareTo(current.data);
+            if (compare < 0) {
+                current = current.left;
+            }
+            else if (compare > 0) {
+                current = current.right;
+            }
+            else { 
+                found = true;
+                break;
+            }
+        }
+        return found;
     }
-    return searchWithPrint(root.left, e) || searchWithPrint(root.right, e);
-}
 }
